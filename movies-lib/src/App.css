@@ -1,38 +1,84 @@
-.App {
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 2rem;
+}
+
+.search input {
+  width: 60%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.search button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.info {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.movie-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.movie-card {
+  background: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.movie-card h3 {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+}
+
+
+body {
+  background-color: #0f0f1b;
+  color: #f8f8ff;
+}
+.search input {
+  background-color: #1c1c2e;
+  color: #f8f8ff;
+  border: 1px solid #ff00cc;
+}
+.search button {
+  background-color: #ff00cc;
   color: white;
+  border: none;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-card {
+  background-color: #1f1f30;
+  color: #fff;
 }
